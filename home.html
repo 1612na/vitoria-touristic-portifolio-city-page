@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Home</title>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"/></script>
+   </head>
+   <body>
+      <header>
+         <a href="#"><img class="logo" src="img\vitoria.png"> </a>
+         <div class="menu-toggle"></div>
+         <nav>
+            <ul>
+               <li><a href="home.html" class="active"></a></li>
+               <li><a href="about.html">Sobre Nós</a></li>
+            </ul>
+         </nav>
+         <div class="clearfix"></div>
+      </header>
+
+      <section class="showcase" id="home">
+         <video src="img\home.mp4" muted loop autoplay></video>
+         <div class="overlay"></div>
+         <div class="text">
+            <h2>Nunca Pare de</h2>
+            <h3>Descobrir Vitória</h3>
+            <p>Enquanto planeja sua próxima viagem para esta encantadora cidade, role a página para descobrir os melhores lugares para visitar com seus amigos e familiares.
+               Certifique-se de explorar todas as experiências imperdíveis em Vitória! A seguir, estão os locais mais belos da capital capixaba que você não pode deixar
+               de visitar enquanto aproveita suas férias nesta cidade vibrante, cheia de história e rodeada por belezas naturais.
+            </p>
+            <a href="places.html">Veja Lugares em Vitória</a>
+         </div>
+         <ul class="social">
+            <li><a target="_blank" href="https://www.facebook.com/"><img src="img\facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/"><img src="img\twitter.png"></a></li>
+            <li><a target="_blank" href="https://instagram.com/"><img src="img\instagram.png"></a></li>
+         </ul>
+      </section>
+      <script>
+         $(document).ready(function () {
+           $('.menu-toggle').click(function() {
+             $('.menu-toggle').toggleClass('active')
+               $('nav').toggleClass('active')
+           })
+         })
+      </script>
+   </body>
+</html>

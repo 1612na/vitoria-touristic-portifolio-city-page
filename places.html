@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lugares</title>
+      <link rel="stylesheet" type="text/css" href="css/places.css">
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"/></script>
+   </head>
+   <body>
+
+     <header>
+        <a href="./home.html"><img class="logo" src="img\vitoria.png"> </a>
+        <div class="menu-toggle"></div>
+        <nav>
+           <ul>
+              <li><a href="home.html">Início</a></li>
+              <li><a href="about.html">Sobre Nós</a></li>
+           </ul>
+        </nav>
+        <div class="clearfix"></div>
+     </header>
+
+     <section class="showcase" id="home">
+        <video src="img\Places.mp4" muted loop autoplay></video>
+    </section>
+      <div class="main">
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/camburi.jpg">
+            </div>
+            <div class="title">
+               <h1>Praia de</h1>
+               <h2>Camburi</h2>
+            </div>
+            <div class="des">
+               <p>Passeio de Stand-Up Paddle (SUP)</p>
+                <p>Caminhada ao Longo da Orla</p>
+                 <p>Prática de Esportes na Praia</p>
+                 <p>Visita a Quiosques e Restaurantes</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/sonia_abral.jpg">
+            </div>
+            <div class="title">
+               <h1>Palácio Cultural</h1>
+               <h2>Sônia Abral</h2>
+            </div>
+            <div class="des">
+              <p>Visita Guiada ao Museu</p>
+               <p>Assistir a Performances Culturais</p>
+                <p>KExploração das Exposições Permanentes</p>
+                <p>Participação em Oficinas e Cursos</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/praia_do_canto.jpg">
+            </div>
+            <div class="title">
+               <h1>Praia do</h1>
+               <h2>Canto</h2>
+            </div>
+            <div class="des">
+              <p>Nado e Relaxamento na Praia</p>
+               <p>Visita ao Shopping Praia do Canto</p>
+                <p>Passeio de Barco pela Região</p>
+                <p>Experiência Gastronômica</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/fachada-da-catedral.jpg">
+            </div>
+            <div class="title">
+               <h1>Catedral</h1>
+               <h2>Metropolitana</h2>
+            </div>
+            <div class="des">
+              <p>Tour Arquitetônico</p>
+               <p>Participação em Missas e Eventos Religiosos</p>
+                <p>Exploração dos Jardins e Áreas Externas</p>
+                <p>Visita ao Centro de Informações</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/parque-botanico-vale.jpg">
+            </div>
+            <div class="title">
+               <h1>Parque</h1>
+               <h2>Bôtanico</h2>
+            </div>
+            <div class="des">
+              <p>Trilha Interpretativa</p>
+               <p>Observação de Aves</p>
+                <p>Picnic nas Áreas Designadas</p>
+                <p>Atividades Educativas para Crianças</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/pedra_da_cebola.jpg">
+            </div>
+            <div class="title">
+               <h1>Pedra da</h1>
+               <h2>Cebola</h2>
+            </div>
+            <div class="des">
+              <p>Caminhada pelo Parque</p>
+               <p>Escalada e Aventura</p>
+                <p>Visita aos Mirantes</p>
+                <p>Fotografia da Paisagem</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/ilha_do_frade.jpg">
+            </div>
+            <div class="title">
+               <h1>Ilha do</h1>
+               <h2>Frade</h2>
+            </div>
+            <div class="des">
+              <p>Passeio de Barco</p>
+               <p>Nado e Mergulho</p>
+                <p>Caminhadas pela Ilha</p>
+                <p>Picnic e Relaxamento</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+         <!--cards -->
+         <div class="card">
+            <div class="image">
+               <img src="img/ilha_do_boi.jpg">
+            </div>
+            <div class="title">
+               <h1>Ilha do</h1>
+               <h2>Boi</h2>
+            </div>
+            <div class="des">
+              <p>Visita às Praias</p>
+               <p>Caminhada pelo Circuito de Trilha</p>
+                <p>Observação da Vida Marinha</p>
+                <p>Relaxamento e Picnic</p>
+               <button>Leia Mais...</button>
+            </div>
+         </div>
+
+      </div>
+
+      <script>
+         $(document).ready(function () {
+           $('.menu-toggle').click(function() {
+             $('.menu-toggle').toggleClass('active')
+               $('nav').toggleClass('active')
+           })
+         })
+      </script>
+   </body>
+</html>

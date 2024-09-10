@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>About Us</title>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"/></script>
+   </head>
+   <body>
+      <header>
+         <a href="./home.html"><img class="logo" src="img\vitoria.png"> </a>
+         <div class="menu-toggle"></div>
+         <nav>
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html" class="active">Sobre nós</a></li>
+            </ul>
+         </nav>
+         <div class="clearfix"></div>
+      </header>
+      <section class="showcase">
+         <video src="img\about.mp4" muted loop autoplay></video>
+         <div class="overlay"></div>
+         <div class="text">
+            <h2>Sobre Nós</h2>
+            <p>A Azevedo Tecnologia, fundada por Daniel Azevedo, é referência em desenvolvimento e manutenção de aplicativos, sistemas e RPAs (Robotic Process Automation). 
+               Desde sua fundação, a empresa tem se destacado por oferecer soluções de alta qualidade para um seleto grupo de clientes, incluindo grandes empresas e parceiros renomados.
+            </p>
+            <p>Com uma equipe de programadores de alto nível, utilizamos nossa expertise para entregar soluções que atendem às necessidades específicas de cada cliente.
+               Nosso compromisso com a excelência e a dedicação em cada projeto refletem a confiança que conquistamos ao longo dos anos. 
+               A Azevedo Tecnologia é seu parceiro ideal para inovação tecnológica e automação.
+            </p>
+            <p> Criado por Daniel Azevedo       | ©2024 todos os direitos reservados </p>
+            <a href="contact.html">Contato</a>
+         </div>
+         <ul class="social">
+            <li><a target="_blank" href="https://www.facebook.com/"><img src="img\facebook.png"></a></li>
+            <li><a target="_blank" href="https://twitter.com/"><img src="img\twitter.png"></a></li>
+            <li><a target="_blank" href="https://instagram.com/"><img src="img\instagram.png"></a></li>
+         </ul>
+      </section>
+      <script>
+         $(document).ready(function () {
+           $('.menu-toggle').click(function() {
+             $('.menu-toggle').toggleClass('active')
+               $('nav').toggleClass('active')
+           })
+         })
+      </script>
+   </body>
+</html>
